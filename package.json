@@ -12,7 +12,7 @@
     "pretest": "eslint ./server --fix",
     "test": "echo \"tests complete\"",
     "nodemon": "nodemon --inspect -e js,html,css --watch ./server ./server/app.js",
-    "build": "babel ./client --out-file ./hosted/bundle.js",
+    "build": "babel ./client --out-file ./hosted/bundle.js"
   },
   "author": "Benjamin Kleynhans",
   "license": "ISC",
