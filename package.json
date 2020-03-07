@@ -8,12 +8,13 @@
   "description": "A simple Express MVC using only static files",
   "main": "./server/app.js",
   "scripts": {
-    "nodemon": "nodemon --watch ./server ./server/app.js",
     "start": "node ./server/app.js",
     "pretest": "eslint ./server --fix",
-    "test": "echo \"tests complete\""
+    "test": "echo \"tests complete\"",
+    "nodemon": "nodemon --inspect -e js,html,css --watch ./server ./server/app.js",
+    "build": "babel ./client --out-file ./hosted/bundle.js",
   },
-  "author": "Cody Van De Mark",
+  "author": "Benjamin Kleynhans",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
